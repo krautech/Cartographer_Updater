@@ -24,6 +24,8 @@ layout: home
 - Canbus to JST-PH Cable (For Katapult Canbus Flashing)
 
 {: .note }
+> NOTE
+>
 > Using the scripts below, you may need to use the **Install Prerequisites** option first to make sure everything is configured prior to flashing.
   
 # DFU Updating
@@ -43,10 +45,14 @@ layout: home
 ## Step 1) Enter DFU Mode
 - DFU mode is relatively simple to enter, but harder in practice. With cartographer plugged in via USB, touch the **boot0** (1) and **reset** (2) pads. This will put the device in DFU mode.
 - This can be quite fiddly and take some time, so listed below is 2 convenient ways to make this more simple.
-> [!WARNING]
+{: .warning }
+> WARNING
+>
 > No LEDs will be on when in DFU mode. If the blue LED is lit, the device is in runtime mode and this isnt what we want. Continue touching those pads till it works!
 
-> [!NOTE]
+{: .note }
+> NOTE
+>
 > via SSH use command `lsusb | grep "DFU"` to find if the device is in **DFU Mode**
 ![Screenshot 2024-08-11 125127](https://github.com/user-attachments/assets/5996588d-1049-458f-8aa4-82894c26168f)
 
@@ -68,7 +74,9 @@ layout: home
 ![Screenshot 2024-08-11 130200](https://github.com/user-attachments/assets/b49c213b-cd06-44aa-8fb4-9989e4994957)
 ![Screenshot 2024-08-11 130404](https://github.com/user-attachments/assets/1a93eb97-8dff-446b-af7b-1fdf8dd7e38f)
 
-> [!NOTE]
+{: .note }
+> NOTE
+>
 > Choose #1 if faced with the image below to use cartographer via canbus at 1M bitrate.
 > 
 > Choose #2 if you will be using cartographer via USB
