@@ -55,7 +55,7 @@ layout: home
 
 ### PCB Cover
 - Use the new PCB cover made by [MakerMylo](https://www.youtube.com/@makermylo) to clip onto the PCB, it will help align tweezers for touching the pads.
-- [PadPusher3000](/STL/PadPusher3000.stl) - PCB Cover
+- [PadPusher3000](STL/PadPusher3000.stl) - PCB Cover
 
 ### Solder Boot0 Method
 - Soldering a bridge on the **boot0** pads can make this process, much easier. All you need to then do is plug in the USB cable and the probe will enter DFU mode.
