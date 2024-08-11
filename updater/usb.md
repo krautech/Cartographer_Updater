@@ -38,6 +38,6 @@ You can pick any of these, however to remain detected you should match your bitr
 ![Screenshot 2024-08-11 144910](https://github.com/user-attachments/assets/dfb64682-28c7-4a4c-a9fe-67649d70bfff)
 
 
-# Step 3) Done
+# Step 4) Done
 ![Screenshot 2024-08-11 144929](https://github.com/user-attachments/assets/6920bdbd-2ee7-4947-97f1-c5a623471898)
 
