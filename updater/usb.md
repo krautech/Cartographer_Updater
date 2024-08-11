@@ -1,5 +1,5 @@
 ---
-title: Home
+title: USB Updating
 layout: home
 ---
 # USB Firmware Updating
