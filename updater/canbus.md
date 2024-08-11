@@ -18,7 +18,7 @@ layout: home
 - USB-A to JST-PH Cable
 - Canbus to JST-PH Cable (For Katapult Canbus Flashing)
 
-> [!NOTE]
+{: .note }
 > Using the scripts below, you may need to use the **Install Prerequisites** option first to make sure everything is configured prior to flashing.
 
 # CANBus Katapult Updating
@@ -41,7 +41,7 @@ The script will detect your UUID if your UUID is inside your **printer.cfg** som
 ![Screenshot 2024-08-11 141421](https://github.com/user-attachments/assets/612dec98-50ab-4ab6-9d61-bc465a7cf411)
 
 ## Step 2) Choose Firmware to Flash
-> [!NOTE]
+{: .note }
 > Your CANBUS bitrare (if configured on your host device) should be detected and displayed. You should flash your cartographer with MATCHING bitrate firmware.
 
 You can pick any of these, however to remain detected you should match your bitrate. You can flash USB if youd like to use cartographer via USB however, as bitrate doesnt matter.
