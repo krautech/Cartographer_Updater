@@ -1,3 +1,7 @@
+---
+title: Home
+layout: home
+---
 # USB Firmware Updating
 - Last Updated 11/08/2026
 - Maintained by KrauTech
