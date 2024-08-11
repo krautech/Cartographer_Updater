@@ -9,9 +9,9 @@ layout: home
 
 ## Which Method Should I Use?
 - KATAPULT! Yes, this is the first point of call when you do a cartographer firmware update. Only if you have issues with this method, should you attempt the others.
-- If you ordered a USB flashed cartographer, you use the [USB Katapult Method](USB_Updating.md)
-- If you ordered a CAN flashed cartographer, you use the [CANBUS Katapult Method](Canbus_Updating.md)
-- If you need to, use DFU Mode [DFU Mode Updating](DFU_Updating.md)
+- If you ordered a USB flashed cartographer, you use the [USB Katapult Method](usb.html)
+- If you ordered a CAN flashed cartographer, you use the [CANBUS Katapult Method](canbus.html)
+- If you need to, use DFU Mode [DFU Mode Updating](dfu.html)
 
 ## Whats Required?
 - Cartographer Probe
@@ -22,12 +22,6 @@ layout: home
 
   or
 - Canbus to JST-PH Cable (For Katapult Canbus Flashing)
-
-## Index
-- [Canbus - Katapult Updating](Canbus_Updating.md)
-- [USB - Katapult Updating](USB_Updating.md)
-- [DFU Updating](DFU_Updating.md)
-- [STLink Updating](#) - Coming Soon
 
 > [!NOTE]
 > Using the scripts below, you may need to use the **Install Prerequisites** option first to make sure everything is configured prior to flashing.
