@@ -23,7 +23,7 @@ layout: home
   or
 - Canbus to JST-PH Cable (For Katapult Canbus Flashing)
 
-> [!NOTE]
+{: .note }
 > Using the scripts below, you may need to use the **Install Prerequisites** option first to make sure everything is configured prior to flashing.
   
 # DFU Updating
