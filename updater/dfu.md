@@ -43,7 +43,7 @@ layout: home
 ## Step 1) Enter DFU Mode
 - DFU mode is relatively simple to enter, but harder in practice. With cartographer plugged in via USB, touch the **boot0** (1) and **reset** (2) pads. This will put the device in DFU mode.
 - This can be quite fiddly and take some time, so listed below is 2 convenient ways to make this more simple.
-- 
+
 {: .warning }
 > No LEDs will be on when in DFU mode. If the blue LED is lit, the device is in runtime mode and this isnt what we want. Continue touching those pads till it works!
 
