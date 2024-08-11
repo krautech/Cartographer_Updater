@@ -2,10 +2,6 @@
 title: Home
 layout: home
 ---
----
-title: Home
-layout: home
----
 
 ```
    ____                  _             _____      _      ____      ____    _____   _____      _    
