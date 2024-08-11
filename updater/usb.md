@@ -17,7 +17,7 @@ layout: home
 - USB-A to JST-PH Cable
 ![image-1](https://github.com/user-attachments/assets/1c082c5d-44ff-43e1-b1bf-f70b4249a490)
 
-> [!NOTE]
+{: .note }
 > Using the scripts below, you may need to use the **Install Prerequisites** option first to make sure everything is configured prior to flashing.
 
 # USB Katapult Updating
@@ -31,7 +31,7 @@ layout: home
 
 
 ## Step 3) Choose Firmware to Flash
-> [!NOTE]
+{: .note }
 > If you plan on using CANBUS, Your CANBUS bitrate (if configured on your host device) should be detected and displayed. You should flash your cartographer with MATCHING bitrate firmware.
 
 You can pick any of these, however to remain detected you should match your bitrare. You can flash USB if youd like to use cartographer via USB however, as bitrate doesnt matter.
