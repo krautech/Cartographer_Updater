@@ -1,5 +1,5 @@
 ---
-title: USB Updating
+title: via Katapult USB
 layout: home
 ---
 # USB Firmware Updating
