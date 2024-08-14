@@ -2,6 +2,7 @@
 title: Macros
 layout: home
 ---
+
 ```
 [scanner] # update cartographer to scanner
 canbus_uuid:51eb6e4f876d # EDIT THIS TO SUIT YOURS
@@ -30,10 +31,6 @@ sensor: cartographer
 probe_speed: 2.0
 tap_location: 175,175 # set to center of bed
 survey_temp: 150
-
-[adxl345] 
-cs_pin: scanner:PA3 
-
 
 [gcode_macro SURVEY_HOME]
 rename_existing: _SURVEY_HOME
