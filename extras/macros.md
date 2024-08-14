@@ -3,6 +3,7 @@ title: Macros
 layout: home
 ---
 
+```python
 [scanner] # update cartographer to scanner
 canbus_uuid:51eb6e4f876d # EDIT THIS TO SUIT YOURS
 #serial: /dev/serial/by-id/usb-Cartographer_614e_110001800643564738333920-if00
@@ -58,3 +59,4 @@ gcode:
         _SURVEY_HOME
         M109 S{ TARGET_TEMP }
     {% endif %}
+```
