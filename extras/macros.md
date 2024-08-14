@@ -2,7 +2,7 @@
 title: Macros
 layout: home
 ---
-
+```
 [scanner] # update cartographer to scanner
 canbus_uuid:51eb6e4f876d # EDIT THIS TO SUIT YOURS
 #serial: /dev/serial/by-id/usb-Cartographer_614e_110001800643564738333920-if00
@@ -30,4 +30,4 @@ sensor: cartographer
 probe_speed: 2.0
 tap_location: 175,175 # set to center of bed
 survey_temp: 150
-
+```
