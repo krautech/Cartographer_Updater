@@ -3,7 +3,6 @@ title: Macros
 layout: home
 ---
 
-```python
 [scanner] # update cartographer to scanner
 canbus_uuid:51eb6e4f876d # EDIT THIS TO SUIT YOURS
 #serial: /dev/serial/by-id/usb-Cartographer_614e_110001800643564738333920-if00
@@ -32,31 +31,3 @@ probe_speed: 2.0
 tap_location: 175,175 # set to center of bed
 survey_temp: 150
 
-[gcode_macro SURVEY_HOME]
-rename_existing: _SURVEY_HOME
-gcode:
-    {% set SURVEY_TEMP = printer.configfile.survey_temp|default("150")|int %}
-    {% set MAX_TEMP = SURVEY_TEMP + 5 %}
-    {% set ACTUAL_TEMP = printer.extruder.temperature %}
-    {% set TARGET_TEMP = printer.extruder.target %}
-    {% if not "xyz" in printer.toolhead.homed_axes %}
-        { action_respond_info("Printer not homed")}
-    {% else %}
-        {% if TARGET_TEMP > SURVEY_TEMP %}
-            { action_respond_info('Extruder temperature target of %.1fC is too high, lowering to %.1fC' % (TARGET_TEMP, SURVEY_TEMP)) }
-             M109 S{ SURVEY_TEMP }
-        {% else %}
-            # Temperature target is already low enough, but nozzle may still be too hot.
-            {% if ACTUAL_TEMP > MAX_TEMP %}
-                { action_respond_info('Extruder temperature %.1fC is still too high, waiting until below %.1fC' % (ACTUAL_TEMP, MAX_TEMP)) }
-                TEMPERATURE_WAIT SENSOR=extruder MAXIMUM={ MAX_TEMP }
-            {% endif %}
-        {% endif %}
-        {% set home_x, home_y = printer.configfile.config.scanner.tap_location.split(',')|map('trim')|map('float') %}
-        G90
-        G0 X{home_x} Y{home_y} F10000
-        M400
-        _SURVEY_HOME
-        M109 S{ TARGET_TEMP }
-    {% endif %}
-```
